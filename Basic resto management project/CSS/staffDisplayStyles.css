@@ -1,0 +1,60 @@
+.staff-container {
+  display: none;
+}
+.show.staff-container
+{
+  display: block;
+}
+.ratings {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+}
+.review,.average-rating{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: antiquewhite;
+  height: 16rem;
+  position: relative;
+}
+.staff-ratings-header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+  background-color: #b1b2ff;
+  font-size: 2rem;
+}
+.average-rating {
+height: 2.8rem;
+}
+.resto_or_user_name {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.individual-average {
+ 
+  background-color:orange;
+  margin-top: 1rem;
+}
+.customers-ratings
+{
+  position: absolute;
+  width:10rem;
+  height: 2rem;
+  top:6rem;
+  cursor: pointer;
+}
+.rating-category
+{
+  width:100%;
+  height:1rem;
+  display: flex;
+  justify-content: space-between;
+  padding:1rem;
+}
+

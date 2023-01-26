@@ -1,0 +1,47 @@
+.resto-rating {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.show.resto-rating
+{
+  display: grid;
+}
+.profile-photo {
+  padding: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+.resto-name {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.resto {
+  display: flex;
+  border-bottom: 0.025rem solid var(--border);
+  cursor: pointer;
+}
+
+.selected-resto-name {
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+  border-bottom: 0.025rem solid var(--border);
+  color: var(--primary-color);
+}
+
+.rating-btn,
+.loginButton,
+.rating-container-displayBtn,
+.backBtn,
+.logoutBtn {
+  background-color: #cdf0ea;
+  cursor: pointer;
+  height: 2rem;
+  width:6rem;
+}
+.resto-rating {
+  color: var(--primary-color);
+}

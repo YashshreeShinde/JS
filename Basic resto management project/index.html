@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda&family=Nunito:wght@500&family=Roboto:wght@300&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/theme.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/restoDisplayStyles.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/loginStyles.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/staffDisplayStyles.css" type="text/css">
+
+    <script src="./JS/index.js" type=module defer></script>
+
+</head>
+
+<body>
+
+    <main>
+
+        <!-- Login -->
+        <section class="login">
+            <h1>Login Form</h1>
+            <form method="post" id="form">
+                <div>
+                    <input type="text" class="input" id="loginName" name="username" placeholder="Enter your username">
+                </div>
+                <div>
+                    <input type="password" class="input" id="password-input" name="password"
+                        placeholder="Enter your password">
+                </div>
+                <button class="loginButton" type="submit" name="loginButton" class="loginButton">Login </button>
+            </form>
+
+            <p class="user-link">Are you a customer?If yes,please provide your valuable review at <button
+                    class="rating-container-displayBtn">Click Here</button></p>
+            <aside class="modal-container">
+                <span class="modal-text">Welcome!!</span>
+            </aside>
+        </section>
+
+        <!-- main-window -->
+        <section class="main-window">
+
+            <!-- Resto's list container -->
+            <section class="resto-container">
+                <header class="resto-header">
+                    <span>Restaurant</span>
+                </header>
+                <div class="restosList">
+
+                </div>
+            </section>
+
+            <!-- Restaurants Rating Container -->
+            <section class="rating-container">
+                <header class="resto-header">
+                    <span>Restaurant ratings</span>
+                </header>
+
+                <div class="selected-resto">
+                    <span class="selected-resto-name">Resta</span>
+                </div>
+
+                <!--Customer Rating(input) container -->
+                <section class="resto-rating">
+                    <h3>Review</h3>
+
+                    <form id="rating_form" action="">
+                        <div class="user-name-input">
+                            <input type="text" placeholder="User Name" class="input user-name" name="username" />
+                        </div>
+
+                        <div>
+                            <input type="number" placeholder="Food" class="input" name="food" min="1" max="5">
+                        </div>
+                        <div>
+                            <input type="number" placeholder="Ambience" class="input" name="ambience" min="1" max="5">
+                        </div>
+                        <div>
+                            <input type="number" placeholder="Service" class="input" name="service" min="1" max="5">
+                        </div>
+                        <div>
+                            <input type="number" placeholder="Cleanliness" class="input" name="cleanliness" min="1"
+                                max="5">
+                        </div>
+                        <div>
+                            <input type="number" placeholder="Overall" class="input" name="overAll" min="1" max="5">
+                        </div>
+                        <div>
+                            <button class="rating-btn">Submit</button>
+                        </div>
+                    </form>
+                </section>
+            </section>
+        </section>
+
+
+
+        <!-- Display review container for admin and manager-->
+        <section class="staff-container">
+            <header class="staff-ratings-header">
+                <button class="backBtn">Back</button>
+                <span class="staff-rating-title">Ratings(Out of 5)</span>
+                <button class="logoutBtn">Logout</button>
+            </header>
+            <div class="average-rating"><span>Average-Rating</span><span class="average">4</span></div>
+            <section class="ratings">
+
+            </section>
+        </section>
+    </main>
+
+    <!-- Modal -->
+
+    <div class="modal">hi</div>
+    <aside class="modal-overlay"></aside>
+</body>
+
+</html>
