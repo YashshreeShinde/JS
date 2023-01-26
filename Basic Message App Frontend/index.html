@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda&family=Nunito:wght@500&family=Roboto:wght@300&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/main_window.css">
+    <link rel="stylesheet" href="./CSS/user.css">
+    <link rel="stylesheet" href="./CSS/chatmessages.css">
+    <link rel="stylesheet" href="./CSS/login.css">
+    
+
+    <script src="./JS/Login.js" type=module defer></script>
+    
+
+</head>
+
+<body>
+        
+    <main id="main">
+        
+        <!-- Login -->
+        <section class="login">
+            <h1>Login Form</h1>
+            <form method="post" id="form">
+                <div>
+                    <input type="text" class="input" id="name-input"name="name" placeholder="Enter your username">
+                </div>
+                <div>
+                    <input type="password" class="input" id="password-input"name="password" placeholder="Enter your password">
+                </div>
+                <button class="loginButton" type="submit" name="loginButton" class="loginButton">Login </button>
+             </form>  
+
+             <aside class="modal-container">
+                <span class="modal-text">Welcome!!</span>
+                
+            </aside>
+
+     </section>
+
+        <!-- Chat window -->
+        <section class="main-window">
+
+            <!-- Users's list container -->
+            <section class="users-container">
+                <header class="chat-window-header">
+                    <span>Users</span>
+                </header>
+
+                <div class="search-user-container">
+                    <input type="text" placeholder="Search user" class="search-user-input">
+                    <button class="search-btn">Search</button>
+                </div>
+                <div class="users">
+
+                </div>
+            </section>
+
+            <!-- Chat Window Container -->
+            <section class="chat-window-container">
+                <header class="chat-window-header">
+                    <span>Chat Window</span>
+                    <button type="button" class="logoutBtn">Logout</button>
+                </header>
+
+                <div class="selected-user">
+                <span class="selected-user-name">User</span>
+            </div>
+
+            <!-- Chat Messages container -->
+                <section class="chatmessages">
+                
+                </section>
+                <section class="send-message">
+                        <input type="text" name="chat-input-message" class="chat-input-message"
+                            placeholder="Enter your message" >
+                        <button type="submit" name="send" class="sendBtn">Send</button>
+                        </input>
+                    
+                </section>
+            </section>
+        </section>
+
+
+       
+    </main>
+</body>
+
+</html>

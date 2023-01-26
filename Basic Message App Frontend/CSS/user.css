@@ -1,0 +1,60 @@
+.users
+{
+    display: flex;
+    flex-direction: column;
+
+} 
+
+.profile-photo
+{
+    padding:1rem;
+    width:2rem;
+    height:2rem;
+}
+.user-name
+{
+   padding:1rem;
+   font-size:1.2rem;
+   color:var(--border_and_fontColor)
+}
+
+.user-list
+{
+    display: flex;
+    border-bottom: 0.025rem solid var(--border_and_fontColor); 
+    cursor: pointer;
+}
+.search-user-container
+{
+    display: flex;
+    height:2rem;
+
+}
+
+.search-user-input
+{
+    flex:2;
+}
+
+.selected-user-name
+{
+ 
+    display: block;
+    font-size: 1rem;
+    position: relative;
+    text-align: center;  
+    border-bottom: 0.025rem solid var(--border_and_fontColor);
+    color:var(--border_and_fontColor)
+}
+.search-btn
+{
+    flex: 1;
+    cursor: pointer;
+}
+.logoutBtn
+{
+    background-color: var(--border_and_fontColor);
+    cursor: pointer;
+}
+
+
