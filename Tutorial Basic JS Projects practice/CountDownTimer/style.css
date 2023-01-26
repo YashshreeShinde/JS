@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body 
+{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Merienda",cursive;
+    margin: 0;
+}
+
+
+h1 
+{
+    font-weight: normal;
+    font-size: 2rem;
+    color:brown;
+    margin-top: 2rem;
+   
+}
+
+.container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text {
+    color:blueviolet;
+    margin: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1;
+ 
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.decorate
+{
+    background-color: aliceblue;
+}
+
+.countdown-el span {
+    font-size: 1rem;
+}

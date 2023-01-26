@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda&family=Roboto:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+   
+    <title>Quiz App</title>
+</head>
+<body> 
+    <!-- Made it like a Instagram Q/A type design -->
+    <div class="quiz-container" id="quiz">
+     
+        <div class="quiz-header">
+            <h2 id="question">Question text</h2>
+            <ul>
+                <li>
+                    <input
+                        type="radio"
+                        id="a"
+                        class="answer"
+                    />
+                    <label id="a_option" for="a">Option A</label>
+                </li>
+                <li>
+                    <input
+                        type="radio"
+                        id="b"
+                        class="answer"
+                    />
+                    <label id="b_option" for="b">Option B</label>
+                </li>
+                <li>
+                    <input
+                        type="radio"
+                        id="c"
+                        class="answer"
+                    />
+                    <label id="c_option" for="c">Option C</label>
+                </li>
+                <li>
+                    <input
+                        type="radio"
+                        id="d"
+                        class="answer"
+                    />
+                    <label id="d_option" for="d">Option D</label>
+                </li>
+            </ul>
+        </div>
+        <button id="submit">Submit</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
