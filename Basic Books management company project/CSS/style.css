@@ -1,0 +1,375 @@
+:root {
+    --heading-color: #1e90ff;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Login related css */
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4070f4;
+}
+.form{
+    padding: 30px;
+    border-radius: 6px;
+    background: #FFF;
+}
+.form.signup{
+    display: none;
+}
+.forms.show-signup .form.signup{
+    display: flex;
+}
+.forms.show-signup .form.login{
+    display: none;  
+}
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+}
+
+.form .field{
+    height: 2.8rem;
+    width: 100%;
+    margin-top:1rem;
+    border-radius: 0.50rem;
+}
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0.50rem;
+}
+.field input{
+    outline: none;
+    padding: 0 0.50rem;
+    border: 0.025rem solid #CACACA;
+}
+
+.field button{
+    color: #fff;
+    background-color: #0171d3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field button:hover{
+    background-color: rgb(183, 65, 65);
+}
+.form-link{
+    text-align: center;
+    padding: 0.50rem;
+}
+.form-link span,
+.form-link a{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #232836;
+}
+.form a{
+    color: black;
+    text-decoration: none;
+}
+.form-content a:hover{
+    text-decoration: underline;
+}
+
+
+/* Admin navigation related css */
+#admin
+{
+    display: flex;
+    display: none;
+    width:100%;
+    height: 100vh;
+}
+
+#nav
+{
+    flex:1;
+    position: sticky;
+    height: 100vh;
+    background: #222222;
+    overflow: auto;
+    
+}
+#main-page
+{
+    flex:4;
+    overflow: auto;
+}
+
+
+.nav_link {
+    display: block;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: 500;
+    
+}
+
+.nav_link:hover {
+    background: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+}
+.section-link
+{
+    text-align: center;
+    background-color: aliceblue;
+    color: #222222;
+    border-right:0.025rem solid #222222;
+}
+
+.add-school,.update-school,.registered-people
+{
+    display: none;
+}
+.distribution-status
+{
+    display: block;
+}
+h1{
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    color:var(--heading-color);
+    text-align: center;
+}
+.item
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.25rem solid #333;
+    padding:0.50rem;
+}
+input[type="checkbox"]
+{
+ 
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right:2rem;
+}
+
+label
+{
+
+    margin-left:1rem;
+    font-size: 1.5rem;
+}
+.remove-img
+{
+ 
+    width:1.5rem;
+    height: 1.5rem;
+}
+.remove-btn
+{
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.remove-schools{
+    display: none;
+}
+
+
+/* Admin functionality related css */
+
+
+.worker-options-select
+{
+    position: absolute;
+    right:2rem;
+    top:4rem;
+    display: none;
+    margin-bottom: 10rem;
+}
+
+.add-school-worker,.edit-school-worker
+{
+    width:6rem;
+    height: 2rem;
+    cursor:pointer;
+}
+.remove-btn
+{
+    height: 2rem;
+}
+.school-details-label
+{
+    font-weight: 900;
+    color:brown;
+}
+ul{
+    list-style: disc;
+}
+.school-img
+{
+    width:6rem;
+    height: 6rem;    
+}
+.school-item
+{
+    
+    border-bottom: 0.025rem solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:1rem;
+}
+.school-details-label,.school-year
+{
+    position: relative;
+    right:1rem;
+}
+.school-name
+{
+    color:royalblue;
+}
+.schools
+{
+    display: none;
+}
+.select-school
+{
+    display: none;
+    width:50%;
+    height:2rem;
+}
+.add-school-to-distributors
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+.select-schools-for-distributor{
+    position: relative;
+    width: 50%;
+}
+.select-field{
+    border: 0.025rem solid rgb(187, 187, 187);
+}
+
+.select-field,.task,.list{
+    width: 100%;
+    background-color: white;
+    padding: 0.3rem;
+}
+.list{
+    box-shadow: 0 1rem 1rem rgb(0,0,0,0.2);
+    display: none;
+}
+.down-arrow{
+    position: absolute;
+    right:0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.school{
+    display: block;
+    padding-left: 0;
+}
+
+.school:hover{
+    background-color: aliceblue;
+}
+.show{
+    display: block;
+}
+.rotate180{
+    transform: rotate(-60deg);
+}
+.select-distributor
+{
+    width:50%;
+
+}
+.add-schools-to-workerBtn
+{
+    margin-top:1rem;
+    margin-left:40%;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    width:8rem;
+    height: 2rem;
+    background-color: lightblue;
+}
+
+.add-school-form,.update-form
+{
+    
+    display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;   
+}
+
+.add-school-form>input{
+    width:50%;
+    height: 2rem;
+}
+.subjects
+{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    width:50%;
+ 
+}
+.subject{
+    height: 2rem;
+}
+.add-school-btn
+{
+    width:6rem;
+    height: 2rem;
+    background-color: rgb(92, 206, 92);
+}
+.add-more-btn
+{
+    width:8rem;
+    height: 2rem;
+    background-color: lightblue;
+    
+}
+.add-more-btn,.add-school-btn{
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+.update-school
+{
+    display:flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;   
+}
+.update-form{
+    display: flex;
+    width:50%;
+    
+}
+
+
+
+
+

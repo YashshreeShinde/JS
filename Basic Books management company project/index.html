@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management System</title>
+
+    <link rel="stylesheet" href="./CSS/theme.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/style.css" type="text/css">
+
+    <script src="./JS/index.js" type="module" defer></script>
+</head>
+
+<body>
+
+    <section id="login">
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Login</header>
+                    <form id="login-form">
+                        <div class="field input-field">
+                            <input type="text" name="username" placeholder="Username" class="input" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" name="password" placeholder="Password" class="password" required>
+
+                        </div>
+
+                        <div class="field button-field">
+                            <button type="button" class="login-btn">Login</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Signup Form -->
+
+            <div class="form signup">
+                <div class="form-content">
+                    <header>Signup</header>
+                    <form id="registration-form">
+                        <div class="field input-field">
+                            <input type="email" name="email" placeholder="Email" class="input" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="text" name="username" placeholder="Name" class="password" required>
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" name="password" placeholder="Create Password" class="password"
+                                required>
+
+                        </div>
+
+                        <div class="field button-field">
+                            <button type="button" class="register-btn">SignUp</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Already have an account? <a href="#" class="link login-link">Login</a></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="admin">
+        <nav id="nav">
+            <div class="nav_link" >Dashboard</div>
+            <div class="section-link" >School Management</div>
+            <div class="nav_link" >View Schools</div>
+            <div class="nav_link" >Add School</div>
+            <div class="nav_link" >Update School</div>
+            <div class="nav_link" >Remove School</div>
+            <div class="section-link" >Worker Management</div>
+            <div class="nav_link" >Pending Requests</div>
+            <div class="nav_link" >Revoke Login Access</div>
+            <div class="nav_link" >Approved Requests</div>
+
+
+        </nav>
+        <section id="main-page">
+
+            <!-- Add school -->
+            <section class="add-school">
+                <h1 class="add-school-header">Add School</h1>
+
+                <form class="add-school-form">
+                    <input type="text" name="name" placeholder="Add School Name" autofocus required>
+                    <input type="number" name="classFrom" placeholder="From class" required>
+                    <input type="number" name="classTo" placeholder="To class" required>
+                    <input type="number" name="academicYear" placeholder="Academic Year" required>
+                    <div class="subjects">
+                        <input type="text" name="subject" class="subject" placeholder="Add Subject" required>
+                    </div>
+                    <button class="add-more-btn" type="button">Add More Subjects</button>
+
+                    <button class="add-school-btn" type="submit">Submit</button>
+                </form>
+            </section>
+
+            <!-- Status -->
+            <section class="distribution-status">
+                <h1>Book Distribution Status of Schools</h1>
+                <h2>All Distributed</h2>
+                <section class="all-distribution">
+                    <h4>Total count:-<span>4</span></h4>
+                    <div class="card">
+                        <img class="school-img" src="" alt="school-img">
+                        <h4 class="name-of-school">a</h4>
+                    </div>
+                </section>
+
+                <h2>Partially Distributed</h2>
+                <section class="partial-distribution">
+                    <div class="card">
+                        <img class="school-img" src="" alt="school-img">
+                        <h4 class="name-of-school">b</h4>
+                    </div>
+                </section>
+
+                <h2>None Distributed</h2>
+                <section class="none-distribution">
+                    <div class="card">
+                        <img class="school-img" src="" alt="school-img">
+                        <h4 class="name-of-school">c</h4>
+                    </div>
+                </section>
+
+            </section>
+
+            <!-- View all schools -->
+            <section class="view-schools">
+                <section class="schools">
+
+                </section>
+            </section>
+
+            <!-- Remove schools -->
+            <section class="remove-schools">
+
+            </section>
+
+            <!-- Update school -->
+            <section class="update-school">
+                <select class="select-school">
+
+                </select>
+            </section>
+
+            <!-- Workers -->
+            <section class="worker">
+                <section class="registered-people">
+                </section>
+            </section>
+        </section>
+
+        <aside class="modal-overlay"></aside>
+
+</body>
+
+</html>
