@@ -1,0 +1,12 @@
+// Only change code below this line
+function urlSlug(title) {
+
+ return title
+    .toLowerCase()
+    .trim()     //to remove white-spaces from start and end
+    .split(/\s+/) //will split the string on one or more spaces and return an array containing the substrings
+    .join("-");   //join array with '-' between strings in array
+
+}
+// Only change code above this line
+urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone");

@@ -1,0 +1,2 @@
+let remainder = 0;
+remainder=14%3

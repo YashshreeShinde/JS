@@ -1,0 +1,7 @@
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+
+let d=lastName.length;
+const lastLetterOfLastName = lastName[d-1]; // Change this line

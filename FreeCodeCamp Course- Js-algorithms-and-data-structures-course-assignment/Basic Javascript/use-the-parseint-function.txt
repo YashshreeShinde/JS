@@ -1,0 +1,6 @@
+function convertToInteger(str) {
+let no=parseInt(str)
+return no
+}
+
+convertToInteger("56");

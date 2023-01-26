@@ -1,0 +1,10 @@
+function splitify(str) {
+  // Only change code below this line
+
+
+  return str.split(/\W/);
+//Matches any non-word character. This includes spaces and punctuation, but not underscores.
+// Only change code above this line
+}
+
+splitify("Hello World,I-am code");

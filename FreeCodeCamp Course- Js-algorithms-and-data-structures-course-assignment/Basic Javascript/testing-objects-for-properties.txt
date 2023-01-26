@@ -1,0 +1,28 @@
+function checkObj(obj, checkProp) {
+  // Only change code below this line
+
+// const checkObj=
+// {
+//   gift: "pony", 
+//   pet: "kitten", 
+//   bed: "sleigh",
+//   city:"Seattle"
+// }
+
+let ans=obj.hasOwnProperty(checkProp);
+console.log(ans)
+if(ans)
+{
+  let value=obj[checkProp];
+
+  return value
+}
+else
+{
+  return "Not Found"
+}
+
+  return "Change Me!";
+  // Only change code above this line
+}
+

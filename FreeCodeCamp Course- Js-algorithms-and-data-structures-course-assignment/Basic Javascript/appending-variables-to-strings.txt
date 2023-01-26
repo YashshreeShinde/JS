@@ -1,0 +1,4 @@
+// Change code below this line
+let someAdjective = "abcd";
+let myStr = "Learning to code is ";
+myStr+=someAdjective
